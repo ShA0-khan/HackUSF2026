@@ -8,6 +8,7 @@ All the code runs using conda venv in Ubuntu 20.04 with recommended setup on HIM
 Then try to run play.py and train.py, note: you might need to downgrade some of the packages to run the code on Ubuntu 20.04
 
 useful commands:
+
     python train.py --task=go2 --headless --num_envs=4096 --max_iterations=6000 --resume --load_run=-1
     tensorboard --logdir ~/robots/HackUSF2026/HIMLoco/legged_gym/legged_gym/scripts --port 6006
     python play.py --task=go2
