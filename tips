@@ -1,0 +1,8 @@
+python train.py --task=go2 --headless --num_envs=4096 --max_iterations=6000 --resume --load_run=-1
+
+python play.py --task=go2
+
+tensorboard --logdir ~/robots/HIMLoco/legged_gym/logs/rough_go2 --port 6006
+
+python play.py --task=go2 --num_env=100 --load_run=Jul09_23-37-47_
+
